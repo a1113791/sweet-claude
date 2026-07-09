@@ -1,0 +1,34 @@
+import { ArrowRight, Mail } from 'lucide-react'
+
+function Newsletter() {
+  return (
+    <section className="bg-primary px-6 py-10 md:px-12">
+      <form className="mx-auto flex max-w-4xl flex-col items-center gap-6 md:flex-row md:justify-between">
+        <div className="flex items-center gap-3 text-text-on-dark">
+          <span className="flex h-8 w-8 items-center justify-center rounded-full bg-bg-base text-label font-semibold text-primary">
+            S
+          </span>
+          <span className="text-body">訂閱你我的甜蜜郵件</span>
+        </div>
+
+        <div className="flex w-full max-w-sm items-center gap-2 rounded-full bg-bg-base px-4 py-2 md:w-auto">
+          <Mail className="h-4 w-4 text-text-secondary" strokeWidth={1.5} />
+          <input
+            type="email"
+            placeholder="輸入你的 Email"
+            className="w-full bg-transparent text-body text-text-main outline-none placeholder:text-text-secondary"
+          />
+          <button
+            type="submit"
+            aria-label="訂閱"
+            className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-text-main transition-transform hover:scale-105"
+          >
+            <ArrowRight className="h-4 w-4" strokeWidth={1.5} />
+          </button>
+        </div>
+      </form>
+    </section>
+  )
+}
+
+export default Newsletter
