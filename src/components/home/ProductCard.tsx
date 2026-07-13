@@ -1,11 +1,11 @@
 import { Heart } from 'lucide-react'
-import ImagePlaceholder from './ImagePlaceholder'
 
 export interface Product {
   id: string
   name: string
   price: number
   tag: string
+  image: string
 }
 
 interface ProductCardProps {
@@ -16,9 +16,10 @@ function ProductCard({ product }: ProductCardProps) {
   return (
     <article className="flex flex-col overflow-hidden rounded-md border border-border bg-bg-base shadow-card">
       <div className="relative">
-        <ImagePlaceholder
-          label={product.name}
-          className="h-56 w-full rounded-t-md"
+        <img
+          src={product.image}
+          alt={product.name}
+          className="h-56 w-full rounded-t-md object-cover"
         />
         <span className="absolute left-3 top-3 rounded-sm bg-primary px-2 py-1 text-label text-text-on-dark">
           {product.tag}

@@ -5,6 +5,10 @@ import CtaBanner from './CtaBanner'
 import ProductGrid from './ProductGrid'
 import Newsletter from './Newsletter'
 import Footer from './Footer'
+import quoteWhyDessert from '../../assets/quotes/lg-為什麼選擇了做甜點.png'
+import quoteWhyEat from '../../assets/quotes/lg-為什麼一定要吃甜點.png'
+import pancakePhoto from '../../assets/photos/photo-1525203135335-74d272fc8d9c.avif'
+import oatmealPhoto from '../../assets/photos/photo-1490914327627-9fe8d52f4d90.avif'
 
 function HomePage() {
   return (
@@ -15,18 +19,20 @@ function HomePage() {
         <Hero />
 
         <FeatureSection
-          eyebrow="為什麼"
-          heading="選擇了做甜點？"
+          quoteImage={quoteWhyDessert}
+          quoteAlt="為什麼選擇了做甜點？"
           body="青山依舊在，幾度夕陽紅。慢看秋月春，是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。"
-          imageLabel="鬆餅特寫"
+          image={pancakePhoto}
+          imageAlt="鬆餅特寫"
           tone="base"
         />
 
         <FeatureSection
-          eyebrow="為什麼"
-          heading="一定要吃甜點？"
+          quoteImage={quoteWhyEat}
+          quoteAlt="為什麼一定要吃甜點？"
           body="青山依舊在，幾度夕陽紅。慢看秋月春，是非成敗轉頭空，滾滾長江東逝水，白髮漁樵江渚上，古今多少事，都付笑談中。"
-          imageLabel="燕麥碗特寫"
+          image={oatmealPhoto}
+          imageAlt="燕麥碗特寫"
           reverse
           tone="alt"
         />

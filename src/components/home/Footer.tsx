@@ -1,11 +1,18 @@
-import { AtSign, Mail, MapPin, Phone, Share2 } from 'lucide-react'
+import { Mail, MapPin, Phone } from 'lucide-react'
+import logo from '../../assets/logo/logo-light.png'
+import quoteImage from '../../assets/quotes/sm-今天是個吃甜點的好日子.png'
+import facebookIcon from '../../assets/icons/ic-facebook.png'
+import lineIcon from '../../assets/icons/ic-line@.png'
 
 function Footer() {
   return (
-    <footer className="bg-primary-dark px-6 py-12 text-text-on-dark md:px-12">
+    <footer className="bg-primary px-6 py-12 text-text-on-dark md:px-12">
       <div className="mx-auto flex max-w-6xl flex-col gap-10 md:flex-row md:justify-between">
         <div className="flex flex-col gap-4">
-          <span className="text-h2">Sweetaste*</span>
+          <div className="flex items-center gap-2">
+            <img src={logo} alt="Sweetaste" className="h-8 w-8" />
+            <span className="text-h2">Sweetaste*</span>
+          </div>
 
           <ul className="flex flex-col gap-2 text-body text-text-on-dark-secondary">
             <li className="flex items-center gap-2">
@@ -25,25 +32,22 @@ function Footer() {
           <div className="flex items-center gap-3">
             <a
               href="#"
-              aria-label="社群連結"
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-bg-base text-primary-dark transition-transform hover:scale-105"
+              aria-label="Facebook"
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-bg-base transition-transform hover:scale-105"
             >
-              <AtSign className="h-4 w-4" strokeWidth={1.5} />
+              <img src={facebookIcon} alt="Facebook" className="h-4 w-4" />
             </a>
             <a
               href="#"
-              aria-label="社群分享"
-              className="flex h-8 w-8 items-center justify-center rounded-full bg-bg-base text-primary-dark transition-transform hover:scale-105"
+              aria-label="LINE"
+              className="flex h-8 w-8 items-center justify-center rounded-full bg-bg-base transition-transform hover:scale-105"
             >
-              <Share2 className="h-4 w-4" strokeWidth={1.5} />
+              <img src={lineIcon} alt="LINE" className="h-4 w-4" />
             </a>
           </div>
         </div>
 
-        <div className="text-right">
-          <p className="text-h2">今天是個</p>
-          <p className="text-h2">吃甜點的好日子。</p>
-        </div>
+        <img src={quoteImage} alt="今天是個吃甜點的好日子。" className="h-auto w-auto" />
       </div>
 
       <p className="mx-auto mt-10 max-w-6xl text-label text-text-on-dark-secondary">

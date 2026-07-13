@@ -4,16 +4,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: '#3F4E3D',
-        'primary-dark': '#2C3A2A',
-        secondary: '#DCC06A',
+        primary: '#3F5D45',
+        secondary: '#FFE180',
         'bg-base': '#FFFFFF',
-        'bg-alt': '#EDF1EA',
-        'text-main': '#2C3A2A',
-        'text-secondary': '#8A8A8A',
-        'text-on-dark': '#F3F1EA',
-        'text-on-dark-secondary': '#B9C2B4',
-        border: '#E2E2E2',
+        'bg-alt': '#EAF0ED',
+        'text-main': '#3F5D45',
+        'text-secondary': '#8DA291',
+        'text-on-dark': '#FFFFFF',
+        'text-on-dark-secondary': '#EAF0ED',
+        border: '#8DA291',
       },
       borderRadius: {
         sm: '6px',
@@ -29,6 +28,14 @@ export default {
         h2: ['26px', { fontWeight: '500' }],
         body: ['15px', { fontWeight: '400' }],
         label: ['13px', { fontWeight: '500', letterSpacing: '0.05em' }],
+      },
+      fontFamily: {
+        nav: [
+          '"PingFang TC"',
+          '"Microsoft JhengHei"',
+          '"Heiti TC"',
+          'sans-serif',
+        ],
       },
     },
   },

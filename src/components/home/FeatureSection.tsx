@@ -1,19 +1,19 @@
-import ImagePlaceholder from './ImagePlaceholder'
-
 interface FeatureSectionProps {
-  eyebrow: string
-  heading: string
+  quoteImage: string
+  quoteAlt: string
   body: string
-  imageLabel: string
+  image: string
+  imageAlt: string
   reverse?: boolean
   tone?: 'base' | 'alt'
 }
 
 function FeatureSection({
-  eyebrow,
-  heading,
+  quoteImage,
+  quoteAlt,
   body,
-  imageLabel,
+  image,
+  imageAlt,
   reverse = false,
   tone = 'base',
 }: FeatureSectionProps) {
@@ -26,14 +26,14 @@ function FeatureSection({
           reverse ? 'md:flex-row-reverse' : 'md:flex-row'
         }`}
       >
-        <ImagePlaceholder
-          label={imageLabel}
-          className="h-72 w-full flex-1 rounded-lg shadow-card md:h-96"
+        <img
+          src={image}
+          alt={imageAlt}
+          className="h-72 w-full flex-1 rounded-lg object-cover shadow-card md:h-96"
         />
 
         <div className="flex flex-1 flex-col items-start gap-4 text-left">
-          <span className="text-label text-text-secondary">{eyebrow}</span>
-          <h2 className="text-display text-primary">{heading}</h2>
+          <img src={quoteImage} alt={quoteAlt} className="h-auto w-auto" />
           <p className="max-w-md text-body leading-loose text-text-secondary">
             {body}
           </p>
