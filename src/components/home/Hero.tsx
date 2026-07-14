@@ -16,17 +16,19 @@ function Hero() {
           className="aspect-[940/496] w-full object-cover shadow-card"
         />
 
-        <div className="relative -mt-10 flex flex-col overflow-hidden rounded-md shadow-float sm:mx-6 sm:flex-row md:mx-16">
-          {CATEGORIES.map((category) => (
-            <div
-              key={category.label}
-              className={`flex w-full flex-shrink-0 items-center justify-center px-6 py-8 backdrop-blur-[5px] sm:h-[256px] sm:w-[260px] ${category.tone}`}
-            >
-              <span className="text-[24px] sm:[writing-mode:vertical-rl]">
-                {category.label}
-              </span>
-            </div>
-          ))}
+        <div className="relative -mt-10 flex w-full justify-center">
+          <div className="flex w-full flex-col overflow-hidden rounded-md shadow-float sm:w-auto sm:flex-row">
+            {CATEGORIES.map((category) => (
+              <div
+                key={category.label}
+                className={`flex w-full flex-shrink-0 items-center justify-center px-6 py-8 backdrop-blur-[5px] sm:h-[256px] sm:w-[260px] ${category.tone}`}
+              >
+                <span className="text-[24px] sm:[writing-mode:vertical-rl]">
+                  {category.label}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
