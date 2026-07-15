@@ -10,7 +10,7 @@ function Newsletter() {
           <span className="text-body">訂閱你我的甜蜜郵件</span>
         </div>
 
-        <div className="flex w-full max-w-sm items-center gap-2 rounded-full bg-bg-base px-4 py-2 md:w-auto">
+        <div className="flex w-full max-w-sm items-center gap-2 bg-bg-alt py-2 pl-4 md:h-[56px] md:w-[380px]">
           <Mail className="h-4 w-4 text-text-secondary" strokeWidth={1.5} />
           <input
             type="email"
@@ -20,7 +20,7 @@ function Newsletter() {
           <button
             type="submit"
             aria-label="訂閱"
-            className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-secondary text-text-main transition-transform hover:scale-105"
+            className="flex flex-shrink-0 items-center justify-center px-[24px] py-[20px] bg-secondary text-text-main transition-transform hover:scale-105"
           >
             <ArrowRight className="h-4 w-4" strokeWidth={1.5} />
           </button>

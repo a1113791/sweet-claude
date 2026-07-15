@@ -1,7 +1,7 @@
 import ProductCard, { type Product } from './ProductCard'
-import photo1 from '../../assets/photos/photo-1512484457149-266d165a4eca.avif'
-import photo2 from '../../assets/photos/photo-1504114133367-631ecd3db3ca.avif'
-import photo3 from '../../assets/photos/photo-1490474504059-bf2db5ab2348.avif'
+import photo1 from '../../assets/photos/photo-1514517220017-8ce97a34a7b6.avif'
+import photo2 from '../../assets/photos/photo-1525203135335-74d272fc8d9c.avif'
+import photo3 from '../../assets/photos/photo-1504473089979-b1c4993a9653.avif'
 
 const PRODUCTS: Product[] = [
   { id: '1', name: '焦糖馬卡龍', price: 450, tag: '本日精選', image: photo1 },
